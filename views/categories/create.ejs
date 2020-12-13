@@ -1,0 +1,11 @@
+<form style="width: 400px; margin: auto;" class="mt-5" action="/categories" method="POST">
+  <%- include('../partials/notifications') %>
+  <h5>Create category</h5>
+  <hr>
+  <div class="form-group">
+    <label for="name">Name</label>
+    <input name="name" type="text" class="form-control" id="name"
+           value="<%= typeof name != 'undefined' ? name : '' %>">
+  </div>
+  <button type="submit" class="btn btn-primary">Create</button>
+</form>

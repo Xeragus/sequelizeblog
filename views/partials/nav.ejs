@@ -1,0 +1,33 @@
+<nav class="navbar navbar-expand-lg w-100">
+  <div class="row w-100 justify-content-between">
+    <div class="col-sm-2">
+      <div>
+        <a class="navbar-brand" href="/">
+          <img src="https://e7.pngegg.com/pngimages/1011/488/png-clipart-social-media-computer-icons-blogger-blog-logo-social-media.png" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
+          sequelizeblog
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+    </div>
+      <div class="col-sm-2 pr-0">
+        <div class="collapse navbar-collapse float-right" id="navbarSupportedContent">
+          <div>
+            <div class="dropdown">
+              <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <%= user.username %>
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="/posts">Posts</a>
+                <a class="dropdown-item" href="/posts/create">Create Post</a>
+                <a class="dropdown-item" href="/categories">Categories</a>
+                <a class="dropdown-item" href="/categories/create">Create Category</a>
+                <a class="dropdown-item" href="/users/logout">Sign Out</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+</nav>
